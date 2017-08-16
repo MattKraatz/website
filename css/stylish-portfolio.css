@@ -174,7 +174,7 @@ hr.small {
 
 .header-text {
     padding-bottom: 6px;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .75);
 }
 
 
@@ -193,6 +193,13 @@ hr.small {
 
 .service-item {
     margin-bottom: 30px;
+}
+
+.tech-logo {
+    position: absolute;
+    max-width: 80px;
+    margin-top: 24px;
+    margin-left: -40px;
 }
 
 
