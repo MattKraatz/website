@@ -15,7 +15,8 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -27,7 +28,7 @@
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
                 <a href="#top" onclick=$( "#menu-close").click();>Matt Kraatz</a>
             </li>
@@ -55,7 +56,7 @@
             <h1 class="header-text">Matt Kraatz</h1>
             <h3 class="header-text">Full Stack Developer</h3>
             <br>
-            <a href="#about" class="page-scroll btn btn-dark btn-lg">Tell Me More</a>
+            <a href="#about" class="page-scroll btn btn-dark btn-lg">&#9660;</a>
         </div>
     </header>
 
@@ -63,8 +64,12 @@
     <section id="about" class="about">
         <div class="container text-center">
             <h2>Development is about process and creativity.</h2>
-            <p class="lead">A problem-solver at heart, I'm passionate about building solutions that empower users to accomplish more with their strengths.</p>
-            <p class="lead">Currently, I'm building with .NET and AngularJS for <a href="http://apexrevtech.com" target="_blank">Apex Revenue Technologies</a>, and working on <a href="https://GameNightBuddy.com" target="_blank">Game Night Buddy</a> whenever I find time.</p>
+            <p class="lead">A problem-solver at heart, I'm passionate about building solutions that empower users to accomplish more with
+                their strengths.</p>
+            <p class="lead">Currently, I'm building with .NET and AngularJS for <a href="http://apexrevtech.com" target="_blank">Apex Revenue Technologies</a>,
+                and working on <a href="https://GameNightBuddy.com" target="_blank">Game Night Buddy</a> whenever I find
+                time.
+            </p>
             <p class="lead">I'm a music enthusiast (all genres) and call Nashville home.</p>
         </div>
     </section>
@@ -87,7 +92,7 @@
                                 <h4>
                                     <strong>Angular</strong>
                                 </h4>
-                                <p>Angular, TypeScript, ngrx, Router, AngularJS</p>
+                                <p>Angular (2/4), TypeScript, ngrx, Router, AngularJS</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -132,13 +137,6 @@
         </div>
     </section>
 
-    <!-- Callout -->
-    <!-- <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside> -->
-
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
@@ -176,18 +174,50 @@
                             </div>
                         </div>
                     </div>
-                    <a href="https://github.com/mattkraatz" target="_blank" class="btn btn-dark">View More on GitHub</a>
+                    <a href="https://github.com/mattkraatz" target="_blank" class="btn btn-dark">View more on GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- Contact -->
     <aside class="call-to-action bg-primary text-white">
-        <div class="container text-center">
-            <h3>The buttons below are impossible to resist.</h3>
-            <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-            <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+        <div class="container">
+            <div class="text-center">
+                <h3>Contact Me</h3>
+            </div>
+            <br/>
+            <form class="form-horizontal" action="https://formspree.io/matt.kraatz@gmail.com" method="POST">
+                <div class="form-group row">
+                    <label for="name" class="col-2 col-form-label" required>Name</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="_replyto" class="col-2 col-form-label" required>Email</label>
+                    <div class="col-10">
+                        <input type="email" class="form-control" name="_replyto">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="_replyto" class="col-2 col-form-label">Phone</label>
+                    <div class="col-10">
+                        <input type="email" class="form-control" name="_replyto" placeholder="Optional">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="message" class="col-2 col-form-label" required>Message</label>
+                    <div class="col-10">
+                        <textarea class="form-control" name="message" row="3"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <input type="submit" class="btn btn-lg btn-light"></button>                    
+                    </div>
+                </div>
+            </form>
         </div>
     </aside>
 
@@ -198,25 +228,20 @@
                 <div class="col-lg-10 mx-auto text-center">
                     <h4><strong>Matt Kraatz</strong></h4>
                     <p>Nashville, TN</p>
-                    <!-- <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul> -->
                     <br>
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://github.com/mattkraatz" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/mattkraatz" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="https://linkedin.com/in/mattkraatz/" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Matt Kraatz 2017</p>
+                    <p class="text-muted">&copy; Matt Kraatz 2017</p>
                 </div>
             </div>
         </div>
