@@ -231,15 +231,36 @@ hr.small {
 }
 
 .portfolio-item {
-    margin-bottom: 30px;
+    margin: 15px 0;
+}
+
+.portfolio-item a {
+  outline: none;
 }
 
 .img-portfolio {
-    margin: 0 auto;
+    max-width: 160px;
+    max-height: 160px;
+    vertical-align: middle;
 }
 
 .img-portfolio:hover {
-    opacity: .8;
+    opacity: .7;
+}
+
+.label-portfolio {
+  color: black;
+  line-height: 3rem;
+}
+
+.vertical-align {
+  height: 160px;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 
@@ -284,4 +305,28 @@ footer {
     bottom: 5px;
     display: none;
     padding: 15px 20px;
+}
+
+/* Modals */
+.modal-header img {
+  height: 26px;
+  vertical-align: top;
+  padding: 2px 5px 0 0;
+}
+
+.modal-header h3 {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.modal-body img {
+  margin: 0 0 1em;
+  max-width: 100%;
+}
+
+div.modal-content{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
 }
