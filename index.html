@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Matt Kraatz is a full-stack, product-minded engineer focused on .NET, React, TypeScript, cloud architecture, DevOps, and AI workflows.">
-  <title>Matt Kraatz | Full-Stack Engineer</title>
+  <meta name="description" content="Matt Kraatz is a product engineer connecting business needs, architecture, and AI-driven software delivery. Building useful products and the systems that help teams ship them.">
+  <title>Matt Kraatz | Product Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,10 +13,10 @@
 <body>
   <main class="site-shell" id="top">
     <header class="hero">
-      <p class="kicker">Nashville, Tennessee</p>
+      <p class="kicker">Product Engineer · Nashville, Tennessee</p>
       <h1>Matt Kraatz</h1>
-      <p class="hero-subtitle">Full-stack, product-minded engineer building reliable software for real operational teams.</p>
-      <p class="hero-summary">Primary stack: .NET, React, TypeScript. Delivery focus: cloud architecture, DevOps/CI/CD, SQL Server, Postgres, AI engineering, conversation APIs, and document extraction.</p>
+      <p class="hero-subtitle">I build useful products and the systems that help teams ship them.</p>
+      <p class="hero-summary">I connect business needs with technical decisions, from product planning and architecture to full-stack delivery. AI is central to how I work: I shape the codebase, standards, and feedback loops that let agents deliver maintainable software.</p>
       <div class="hero-links" aria-label="Outbound links">
         <a href="https://github.com/mattkraatz" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/mattkraatz/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -24,60 +24,91 @@
     </header>
 
     <section class="section-grid" aria-labelledby="focus-heading">
-      <h2 id="focus-heading">Current Focus</h2>
+      <h2 id="focus-heading">Two Halves of the Same Job</h2>
       <div class="panel">
-        <h3>Engineering Profile</h3>
-        <p>I build end-to-end products and internal platforms with a bias for clear architecture, fast iteration, and maintainable code. I move comfortably between product planning, implementation, and operational hardening.</p>
+        <h3>Build the Right Product</h3>
+        <p>I work with business and product teams to understand the problem, make tradeoffs, and turn requirements into a practical plan. I carry that work through estimation, implementation, testing, rollout, and training.</p>
       </div>
       <div class="panel">
-        <h3>Core Technologies</h3>
-        <ul>
-          <li>.NET and C# service/API development</li>
-          <li>React and TypeScript frontend systems</li>
-          <li>SQL Server and Postgres data modeling and optimization</li>
-          <li>Cloud architecture and delivery automation</li>
-        </ul>
+        <h3>Build the Software Factory</h3>
+        <p>I shape the environment that makes delivery repeatable: architecture, engineering standards, agent workflows, automation, and CI/CD. The aim is faster product delivery with code that people and agents can understand, verify, and change.</p>
       </div>
-    </section>
-
-    <section class="section-domain" aria-labelledby="domain-heading">
-      <h2 id="domain-heading">Domain Depth</h2>
-      <p>Extensive delivery experience in healthcare, including medical billing, cost containment, and workers compensation workflows. I design systems that support compliance, auditability, and throughput for operations-heavy teams.</p>
     </section>
 
     <section class="section-projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Selected Work Patterns</h2>
+      <h2 id="projects-heading">Selected Work</h2>
       <div class="cards">
-        <article class="card">
-          <h3>Conversation-Driven Operations</h3>
-          <p>Built AI-assisted conversation flows that reduced routing friction and improved handoff quality between internal teams and end users.</p>
-          <p class="meta">Conversation APIs · AI orchestration · Product integration</p>
+        <article class="card card-featured">
+          <p class="kicker">AI Delivery / Legacy Modernization</p>
+          <h3>Turn a Manual Migration into an Autonomous Workflow</h3>
+          <p class="outcome">~4× faster migration delivery. Agent runs of 20+ hours.</p>
+          <p>A migration from legacy ASP.NET MVC, Razor views, and bespoke JavaScript to modern .NET APIs and React was moving one widget at a time. I built an eight-phase agent workflow to inventory, migrate, and verify a page at a time, applying the new application's standards throughout.</p>
+          <p>Live integration tests compared JSON results from old and new service methods against the real database to verify equivalent behavior, alongside Playwright testing. A decision framework guided agents through uncertainty. I traced review and QA failures to their root causes and improved the workflow until it could run autonomously for more than 20 hours.</p>
+          <p class="meta">Estimated 4× acceleration over the manual migration process, with little rework.</p>
         </article>
         <article class="card">
-          <h3>Document Extraction Pipelines</h3>
-          <p>Shipped structured extraction workflows for high-volume operational documents, increasing processing speed and confidence in downstream automation.</p>
-          <p class="meta">OCR + extraction · Validation design · Workflow reliability</p>
+          <p class="kicker">Product / End-to-End Ownership</p>
+          <h3>A New Claim Repricing Product</h3>
+          <p>I specified and built a major claim repricing application from scratch: a frontend, an authoring backend, and a runtime service that processes claims. I designed the data model for complex contracted pricing scenarios, then led training and rollout.</p>
+          <p class="meta">From business requirements to a working product in use.</p>
         </article>
         <article class="card">
-          <h3>Cloud Delivery Foundations</h3>
-          <p>Implemented CI/CD-first deployment patterns with observability and rollback safety to support frequent releases in regulated business contexts.</p>
-          <p class="meta">Cloud architecture · DevOps/CI/CD · Production support</p>
+          <p class="kicker">Product / Business Impact</p>
+          <h3>Rework the Core Pricing Workflow</h3>
+          <p>I independently delivered a refactor of our main claim repricing application, changing how claims route through networks and contracts. Extensive testing supported a launch with no reported bugs or regressions.</p>
+          <p class="meta">Approximately 3% increase in potential revenue.</p>
+        </article>
+        <article class="card">
+          <p class="kicker">Architecture / Developer Experience</p>
+          <h3>Make a Distributed System Easier to Change</h3>
+          <p>In an environment of two dozen-plus connected applications across cloud and on-premises systems, I spearheaded the move to a monorepo. Nx coordinates builds; pnpm and NuGet central package management consolidate dependencies. Moving internal packages to project references simplifies releases and creates a path to shared pipelines, code, and documentation.</p>
+          <p>The work includes aligning framework and package versions and tackling difficult upgrades, including IronPython 2 to 3. My architectural direction is simplification: consolidate services into modular monoliths where independent deployment adds more cost than value.</p>
+        </article>
+        <article class="card">
+          <p class="kicker">AI / Business Operations</p>
+          <h3>Faster Medical Bill Entry</h3>
+          <p>At ForzaCare, I designed and implemented an AI workflow that extracted structured data from medical bills, making bill entry 85% faster with improved accuracy.</p>
+          <p>As Associate Director of Data Solutions and Development, I also led the development of a new product spanning partner APIs, an operations frontend, and backend services, alongside responsibility for production systems and operational support.</p>
+          <p class="meta">AI applied to a measurable operational bottleneck.</p>
         </article>
       </div>
     </section>
 
+    <section class="section-workflow" aria-labelledby="workflow-heading">
+      <h2 id="workflow-heading">Make Good Delivery Repeatable</h2>
+      <p>I introduced shared agent skills across the organization to help teams adopt AI and use it more effectively. Those skills support a consistent workflow:</p>
+      <ol class="workflow-steps">
+        <li>Define the product specification.</li>
+        <li>Translate it into a technical plan.</li>
+        <li>Review the plan and its tradeoffs.</li>
+        <li>Have an agent implement the plan.</li>
+        <li>Review, test, and QA the output.</li>
+        <li>Ship through deployment pipelines.</li>
+      </ol>
+      <p>Unit and integration tests give agents useful feedback and reviewers evidence. I'm also implementing coverage monitoring and exploring mutation testing to understand how well our tests catch mistakes.</p>
+      <p>Documentation is part of that environment. I created skills and led an effort to capture architectural decisions, business rules, domain guides, glossaries, inline explanations, and runbooks. System diagrams and Mermaid workflows help connect knowledge spread across applications.</p>
+      <p class="tool-note">Hands-on with Claude Code, Codex, Copilot, Cowork, and Cursor, including autonomous agent loops and reusable skills.</p>
+    </section>
+
+    <section class="section-domain" aria-labelledby="domain-heading">
+      <h2 id="domain-heading">Built on Industry Experience</h2>
+      <p>I'm a Staff Engineer at Prime Health Services, with more than nine years in software development across healthcare, medical billing, cost containment, and workers' compensation. My roles have spanned team leadership, DevOps, product delivery, and ownership of production systems.</p>
+      <p>Before software engineering, I led sales operations: building processes, managing partner workflows, and turning business data into decisions. That experience shapes how I work with stakeholders today. I want to understand how the business runs, what slows people down, and where software can make a meaningful difference.</p>
+    </section>
+
     <section class="section-principles" aria-labelledby="principles-heading">
-      <h2 id="principles-heading">How I Work</h2>
+      <h2 id="principles-heading">Engineering Judgment Still Matters</h2>
       <ul>
-        <li>Ship clear increments that solve real user friction.</li>
-        <li>Keep architecture practical and explainable.</li>
-        <li>Design for operational ownership, not demo-only success.</li>
+        <li><strong>Own the outcome.</strong> AI writes the code; I own the requirements, architecture, verification, and delivery.</li>
+        <li><strong>Fix the cause.</strong> Turn review findings and QA failures into better guidance, tests, and workflows.</li>
+        <li><strong>Reduce the cost of the next change.</strong> Inconsistent patterns, unfinished migrations, and missing documentation are technical debt, too.</li>
+        <li><strong>Earn the complexity.</strong> Prefer clear boundaries and simpler systems when more services don't improve the product.</li>
       </ul>
     </section>
 
     <footer class="site-footer">
       <p>Matt Kraatz</p>
-      <p>Full-stack/Product-minded Engineer</p>
+      <p>Product engineering · Architecture · AI delivery · DevOps</p>
       <p><a href="https://github.com/mattkraatz" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://linkedin.com/in/mattkraatz/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </footer>
   </main>

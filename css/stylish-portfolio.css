@@ -37,6 +37,7 @@ body {
 .section-grid,
 .section-domain,
 .section-projects,
+.section-workflow,
 .section-principles,
 .site-footer {
   border: 3px solid var(--line);
@@ -49,6 +50,7 @@ body {
 .section-grid,
 .section-domain,
 .section-projects,
+.section-workflow,
 .section-principles {
   padding: 1.2rem;
 }
@@ -171,7 +173,7 @@ p {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.85rem;
 }
 
@@ -187,6 +189,48 @@ p {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+.card-featured {
+  grid-column: 1 / -1;
+}
+
+.card .kicker {
+  margin-bottom: 0.65rem;
+}
+
+.card p + p,
+.section-domain p + p,
+.section-workflow p + p {
+  margin-top: 0.8rem;
+}
+
+.card .outcome {
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+}
+
+.section-workflow > p {
+  max-width: 80ch;
+}
+
+.workflow-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 2rem;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.workflow-steps li::marker {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+}
+
+.tool-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .site-footer {
@@ -212,7 +256,8 @@ p {
     padding: 0.75rem;
   }
 
-  .section-grid {
+  .section-grid,
+  .workflow-steps {
     grid-template-columns: 1fr;
   }
 
@@ -220,6 +265,7 @@ p {
   .section-grid,
   .section-domain,
   .section-projects,
+  .section-workflow,
   .section-principles,
   .site-footer {
     box-shadow: 5px 5px 0 var(--line);
